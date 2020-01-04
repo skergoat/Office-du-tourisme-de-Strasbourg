@@ -2,10 +2,11 @@
 
 living demo : https://skergoat.com/wordpress/
 
-ADMIN
+connexion admin : 
 
-pseudo : mentor
-pwd : openclassrooms 
+	pseudo : mentor
+	
+	pwd : openclassrooms 
 
 
 Connecter la BDD et lancer Wordpress en local :  
