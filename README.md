@@ -2,10 +2,9 @@
 
 living demo : https://skergoat.com/wordpress/
 
-Connexion admin : 
+ADMIN
 
 pseudo : mentor
-
 pwd : openclassrooms 
 
 
