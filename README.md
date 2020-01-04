@@ -1,6 +1,6 @@
 # office-du-tourisme-de-Strasbourg
 
-living demo : https://skergoat.com/strasbourg
+living demo : https://skergoat.com/wordpress/
 
 Connexion admin : 
 
