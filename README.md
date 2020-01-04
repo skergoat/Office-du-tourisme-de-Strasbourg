@@ -6,7 +6,7 @@ connexion admin :
 
 	pseudo : mentor
 	
-	pwd : openclassrooms 
+	pswd : openclassrooms 
 
 
 Connecter la BDD et lancer Wordpress en local :  
