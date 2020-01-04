@@ -1,0 +1,371 @@
+
+
+Presentation du Site de OT Strasbourg 
+
+
+La mission : creer le site de l'office du tourisme de Strasbourg. Ce site doit contenir une homepage visuelle qui souhaite la bienvenue, affiche les actualites, contient un menu fixed et une zone de recherche. Des pages "Actualites" contenant les actualites au nom de la ville, "Plus d'Infos", "Activites du mois" ou il est possible de s'inscrire a ces activites et "Contact" contenant un formulaire contenant des champs precis. Une animation en CSS3 doit etre ajoutee. Le site doit etre optimise pour le referencement naturel.    
+
+***************************
+	  CHOIX DU THEME     
+***************************
+
+ONLINE-LITE 
+
+Pourquoi ? 
+
+- theme beau, moderne, visuel, adapte a une homepage visuelle et a un site contenant de nombreux articles
+- La homepage peut etre customisable et on peut ajouter un slider - qui est exactement ce que je voulais 
+- bien note par les utilisateurs 
+- facile a customiser. J'en avais pris un plus beau encore, mais trop difficile a customiser. 
+
+- donc creation d'un theme enfant : "ONLINE-LITE-CHILD" et customization. 
+
+- J'ai modifie la plupart des fichiers que ce soit les templates ou les boucles PHP. 
+- j'ai ajoute des plugins. Mais uniquement quand cela etait necessaire (tableau, mails, SEO, etc.)
+
+
+Rentrons maintenant dans le site en lui-meme.
+Il correpond parfaitement au cahier des charges : 
+
+
+
+***************************
+		PRESENTATION 
+***************************
+
+
+******** HOMEPAGE *********
+
+
+La page d'accueil contient 6 parties : 
+
+
+- NAVBAR : 
+	
+	- contient les items demandes 
+	- une zone de recherche animee en JS et cree par mes soins  														!! 
+	- au scroll elle nous suit et se reduit  
+	- le logo de OT Strasbourg se reduit lui aussi suivant un canon du web design moderne 
+
+- HEADER 
+
+	- Le header est un diaporama tres visuel 
+	- on y trouve 3 images illustrant des aspects typiques de la ville : petite france et Parlement europeen 
+	- un message de bienvenue et d'explication 																			
+	- le logo "Word Heritage" 
+
+
+Les sections illustrent le menu du site. Ce pour plus de realisme et faciliter l'experience utilisateur : 
+
+
+- SECTION 1 : ACTUALITES 
+
+	- Liste des dernieres actualites de la ville 
+	- les vignettes ont le meme design que l'on retrouve sur la page "actualites"  
+	- on y trouve une image, la date du post, un titre, une description et un bouton "lire" 
+	- pour acceder a l'article il faurt cliquer sur l'image ou le bouton 
+
+- SECTION 2 : ACTIVITES DU MOIS 
+
+	- image avec overlay, leger parallax et court texte
+	- au click on se retrouve sur page "activites du mois"
+
+- SECTION 3 : PLUS D'INFOS 
+
+	- identique d'un point de vue design a la section 1 
+	- presente les derniers post plublies sur la page "Plus d'infos"
+
+- FOOTER : 
+
+	- section complete avec : 
+
+		- description du site + logo
+		- coordonnees
+		- horaires d'ouverture + shop 
+		- divers labels tourisme qualite france + link vers le site 
+		- Links vers : 
+
+			- liens utiles 
+			- mentions legales 
+			- sitemap html (clients) + xml (moteurs de recherches)
+
+		- reference du developpeur 
+
+
+
+******** ACTUALITES *********
+
+- comme prevu presente les dernieres actualites postees au nom de la ville 
+- on en trouve 6 pour le moment 
+- design identique aux "cards" de la page d'accueil
+- une sidebar sur laquelle nous reviendrons 
+
+- si on click sur une actualite on trouve : 
+
+	- un article sur le lieu ou l'evenement (illustre et optimise SEO)
+	- les coordonnees et le logo du lieu ou de l'evenement 
+	- une maps pour situer le lieu ou l'evenement
+	- la signature de la ville 
+	- des suggestions d'autres articles 																				
+	- un formulaire pour poster un commentaire  
+
+
+
+******** PLUS D'INFOS *********
+
+- cette page contient differentes activites a faire en ville, specialement les musees 
+- le design est le meme que celui des vignettes precedentes
+- les articles sont mis en page de la meme facon  
+
+
+******** ACTIVITES DU MOIS *********
+
+- contient un tableau presentant 10 activites a venir dans le mois 
+- chaque ligne se color au survol pour que l'on puisse se reperer 
+- a droite une image sert de bouton et ouvre un formulaire popup pour s'inscrire a l'activite 
+- le formulaire, cree avec ContactForm 7 fonctionne 
+
+
+******** CONTACT *********
+
+La page contact contient : 
+
+- un formulaire contenant des champs : 
+
+	- titre 
+	- nom 
+	- mail 
+	- date de naissance avec : 
+
+		- calendrier 
+		- indication et obligation de structurer la date au format : jj/mm/aa 
+
+	- nationalite 
+	- message 
+
+- le logo de l'OT 
+- les coordonnees de l'OT 
+
+
+******** SEARCH *********
+
+- page avec titre + smiley detective 
+- si resultats : vignettes affichees sous le titre 
+- si rien : message : "desole il n'y a rien"
+
+
+******** 404 *********
+
+- idem page 404 
+
+
+***************************
+			JS  
+***************************
+
+script.js : 
+
+- ombre a l'ouverture du menu mobile 
+- disparition de la srarch zone au resize 
+- animation search zone au click sur la loupe 
+- seconde seqrch zonr responsive 
+- ombre menu shrink et reduction du logo au scroll 
+- logo World Heritage sur slider
+- modification du titre de la page actualites 
+
+
+***************************
+			PHP  
+***************************
+
+Pour plus de realisme et ameliorer l'experience utilisateur j'ai modifie le PHP a plusieurs endroits : 
+
+
+*** hometemplate.php ***
+
+- array = ajouter ou retirer les noms des parties du template, en l'occurence : slider, team, testimonial, etc. 
+
+
+- les boucles n'etaient faites que pour afficher les articles
+- specialement les derniers 
+
+J'ai donc cree des boucles PHP quand c'etait necessaire pour afficher les bons articles par categories et par page 
+Sur la page d'accueil j'ai afficher les articles des categories "actualites" en haut et "plus d'infos" en bas
+
+
+*** section_blog.php / section_team.php ***
+
+- reecris une loop avec l'objet Wp_Query pour afficher les actualites et plus d'Infos 															!!
+
+
+*** Loop.php / Actualites *** 
+
+- pages affichage des actualites 
+- cree 3 autres boucles pour afficher les actualites par categories : boire et manger, sorties, evenements 
+- utilise objet WP_Query en precisant id de la categoire et nb de post / page
+- l.90 - 105 : pour permettre un affichage des articles par mots du titre et non par categories sur la page d'archive, j'ai cree la condition suivante : 
+
+	if is_home() ? Wp_Query : boucle while WP 
+
+
+*** page.php *** 
+
+- page "plus d'infos"
+- meme operation (boucles avec WP_Query) pour afficher uniquement les bons articles sur cette page 
+
+
+*** Single.php / Plus d'infos / show ***	
+
+- l. 26 - 30 : je n'arrivais pas a afficher le titre "plus d'infos" avec la fonction the_title(). Donc cree une condition specifique. 
+- l. 50 - 95 : pour afficher des suggestions d'articles de la meme categories j'ai cree une boucle specifique avec l'objet WP_QUery.
+- l. 97 - 104 : retire les commentaires sur la page "plus d'infos" grace a la fonction in_category()  
+
+
+*** functions.php ***
+
+- l.28 : add jquery
+- l.35 : fichiers JS perso 
+- l.56 a la fin : desactivé un ensemble d'éléments inutiles qui ralentissent l'application   
+
+
+WP-Query est une classe PHP qui permet de personnaliser la boucle WP. Notamment elle permet de savoir s'il existe tant d'articles de telle catégorie. Si oui, on ajoute une boucle while qui affichera les articles tant qu'il y en aura.
+
+
+
+***************************
+		RESPONSIVITE  
+***************************
+
+Le site est entierement responsive : 
+
+HOMEPAGE : 
+
+	- menu devient un burger 
+	- taille de la search zone adaptee 
+	- taille du header adaptee 
+	- cards alignees en colonne 
+	- items du footer alignes en column sauf les liens bottom 
+
+ACTUALITES, PLUS D'INFO 
+
+	- sur ces pages les vignettes sont alignees en column 
+	- la sidebar passe sous les articles 
+	- sur chaque article : 
+
+		- la taille des images est adaptee
+		- le contenu est mis en column si necessaire 
+
+ACTIVITES DU MOIS 
+
+	- j'ai fait le choix d'un tableau responsive de sorte qu'on ne voit plus que le titre et la date des activites. 
+	- L'image et la description sont accessibles en cliquant sur le titre de l'activite 
+
+CONTACT 
+
+	- on retrouve les memes arrangement du design 
+
+
+
+***************************
+		ANIMATION  
+***************************
+
+- l'animation CSS consiste a agrandit legerement les items de la sidebar quand hover 
+- ligne 1186 : application d'un scale sur les ul li des widgets 
+
+
+
+***************************
+	  SECURITE ET SEO   
+***************************
+
+- SECURITE 
+
+	- tous les formulaires sont securises avec ReCaptcha v3 
+
+- SEO 
+
+	- Yoats a ete installe 																									 
+	- les sitemap XML ont ete generes avec 	
+	- Tous les articles ont ete optimises SEO et sont au vert 
+	- la SEO globale du site a ete checkee au vert par Yoats et Ryte.
+
+	- Le domaine est heberge sur CloudFare pour cree un cache et accelerer le chargement du site  
+
+	- toutes les images ont ete optimisees sur Photoshop et Optimizilla pour leur poid 
+	- Des plugins ont ete utilises pour optimiser la vitesse de chargement du site 
+
+
+
+
+***************************
+	      PLUGINS    
+***************************
+
+	- Autoptimize : 
+
+		- pour creer des version min de JS, HTML et CSS 
+		- pour optimiser les images 
+		- creer un cache du site 
+
+
+	- Smush pour : 
+
+		- optimiser les images 
+		- compresser les nouvelles images pour les afficher en Webem sur le site  
+
+
+	Autrement d'un point de vu design :
+
+
+	- Contact Form 7 + Date Picker : 
+
+		- formulaire simple, personnalisable dont j'aime me servir 
+		- installation de ReCaptcha 
+		- date picker pour le calendrier et le formatage des dates 
+
+
+	- WP Sitemap Page pour le sitemap en HTML 
+
+
+	- Smart Slider :
+
+		- pour les slider sur les articles
+		- tres facile a creer et integrer 
+
+
+	- YoutuWP : 
+
+		- pour les videos de la fete de la musique 
+		- permet d'avoir des videos responsives sans coder (faire qu'elles restent lisibles sur small devices)
+
+
+	- ThemeHunk-Customizer : 
+
+		- complement du theme Oneline-Lite 
+		- permet d'avoir acces au template de homepage (slider, etc.)
+
+
+	- Popup Maker : pour le formulaire d'inscription sur la page "activites du mois"
+
+
+	- Data Tables by Supsystic : pour le tableau sur la page "activites du mois"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

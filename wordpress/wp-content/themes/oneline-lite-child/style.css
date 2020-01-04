@@ -1,0 +1,1950 @@
+/*
+Theme Name: Oneline Lite Child
+Description: Theme enfant de Stephane Kergoat
+Author: Stephane Kergoat 
+Author URI: https://github.com/ApsaraWebDev
+Template: oneline-lite 
+Version: 0.1.0
+*/
+
+
+/****************************** GENERAL ******************************/
+
+/* couleur des liens */
+
+a, a:active, a:focus, a:hover {
+
+	text-decoration:none;
+}
+
+/* maps */
+
+iframe {
+
+	width:100%;
+}
+
+/* table */
+
+tr {
+
+	cursor:default !important;
+}
+
+/* couleur des titres des pages */
+
+.page-title .demo-image h2.title, .demo-image .archive-title h2, #big-title {
+
+	color:#E74C3C;
+	font-size:50px;
+}
+
+/* container titre pages */
+
+.full-fs-caption .caption-container {
+
+	background:#19242F;
+}
+
+/* page de recherche */
+
+.caption {
+
+	background:#192530;
+}
+
+figcaption {
+
+	height:280px;
+	position:relative;
+}
+
+figcaption a:hover, .caption-container h2 a {
+
+	text-decoration:none;
+}
+
+.other_articles {
+
+	height:190px;
+}
+
+.caption-container h2 a {
+
+	cursor: default;
+}
+
+ #latest-post span.read-more a, .read-more a {
+
+ 	position: absolute;
+    bottom: 30px;
+    left: 100px;
+ }
+
+ .read-more a {
+
+ 	border-radius: 0;
+    color: #7d7d7d;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: solid #7d7d7d 1px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+    background: 0 0;
+ }
+
+ .read-more a:hover {
+
+ 	border-color:#E74C3D;
+ }
+
+/****************************** ACCUEIL  ******************************/
+/******************************			 ******************************/
+
+/****************************** HEADER ******************************/
+
+
+/* style du logo */
+
+.header #logo {
+
+	position:absolute;
+}
+
+#logo img {
+
+	display:block;
+	margin:auto;
+	transition: all 0.3s ease;
+}
+
+
+/* classe logo shrink */
+
+.sans {
+
+	width:220px;
+	height:115px;
+}
+
+.avec{
+
+	width:120px;
+	height:70px;
+}
+
+/* stylisation du header */
+
+.header #logo {
+
+	padding-bottom:0px;
+	padding-top:0px;
+}
+
+.header.smaller #logo {
+
+	padding-bottom:0px;
+	padding-top:0px;
+}
+
+.header.smaller, .home .header.hdr-transparent.smaller {
+
+	box-shadow: 0px 0px 8px 2px #000000;
+}
+
+/* current page color */
+
+.navigation li.current_page_item > a {
+
+	color:#D75745;
+}
+
+/* icone maison */
+
+.homepage_icon {
+	background: url("https://skergoat.com/wordpress/wp-content/uploads/2019/11/icon_maison.png") no-repeat center transparent;
+	width: 30px;
+	height: 30px;
+}
+
+#menu-item-253 {
+	position: relative;
+    left: -50px;
+}
+
+#menu-item-253 a {
+	position: relative;
+    right: -30px;
+}
+
+/* position du menu */
+
+#main-menu-wrapper  {
+
+	padding-bottom:20px;
+	padding-top:20px;
+	overflow:hidden;
+	display: flex;
+    justify-content: flex-end;
+    transition: all 0s ease-out;
+}
+
+/* ajustement search form */
+
+.fas.fa-search {
+
+	margin-top:7px;
+}
+
+.container_input {
+
+	display:flex;
+	justify-content:flex-start;
+}
+
+.smaller #main-menu-wrapper {
+
+	padding-top:19px;
+	overflow:hidden;
+	display: flex;
+    justify-content: flex-end;
+    padding-bottom: 13px;
+}
+
+.div_searchform {
+
+	display:flex;
+	flex-direction:column;
+}
+
+/****************************** SEARCH FORM ******************************/
+
+#ma_search_form{
+
+	position:absolute;
+	top:-15px;
+	width:300px;
+}
+
+#ma_nav {
+
+	position:relative;
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+}
+
+#bouton_loupe {
+
+	position:relative;
+	color:#E74C3C;
+	font-size:25px;
+	cursor:pointer;
+}
+
+/* search form mobile */
+
+.ma-form {
+
+
+	display:flex;
+}
+
+.q {
+
+	border-radius:0px;
+	height:40px;
+	width:274px;
+	border:none;
+	border-bottom:2px solid #E74C3C;
+	font-size:20px;
+	background-color:transparent;
+}
+
+/* bouton search form */
+
+.fa, .fas, .fab.fa-facebook-f{
+
+	cursor:pointer;
+	color:#E74C3C;
+	margin-top:5px;
+}
+
+#facebook {
+
+	color:#fff;
+	margin-top:0px;
+}
+
+.even, .odd {
+
+	cursor:default !important;
+}
+
+#ma_search_form_2 {
+
+	display:none;
+}
+
+#bouton_loupe_2{
+
+	display:none;
+}
+
+#bouton_retour {
+
+	font-size: 25px;
+}
+
+#bouton_retour_2{
+
+	display:none;
+}
+
+.help {
+
+	font-size:10px;
+}
+
+/****************************** SLIDER ******************************/
+
+/* titres du slider */
+
+.theme-slider-button::after, .theme-slider-button::before {
+
+	display:none;
+}
+
+.caption_lien {
+
+	text-transform:uppercase;
+	font-weight:900;
+}
+
+.caption_titre {
+
+	font-weight:900;
+}
+
+/* logo bas du slider */
+
+#logo_bis {
+
+	display:block;
+	width:160px;
+	height:105px;
+	position:absolute;
+	bottom:60px;
+	left:20px;
+	
+}
+
+#div_logo_bis {
+
+	position:absolute;
+	width:100%;
+	height:20%;
+	z-index:3000;
+	background:transparent;
+	bottom:0px;
+}
+
+.header {
+
+	z-index:200;
+}
+
+/****************************** SECTIONS PAGE D'ACCUEIL ******************************/
+
+/* margin-top page accueil infos */
+
+#container_plus_info {
+
+	padding-top:80px;
+}
+
+/* infos page d'accueil */
+
+.ma_caption{
+
+	padding:40px;
+}
+
+/* div diagonal */
+
+#lien_div_diagonale {
+
+	text-decoration:none;
+}
+
+#section_div_diagonale {
+
+	cursor:pointer;
+	background-image:url('https://skergoat.com/wordpress/wp-content/uploads/2019/09/header-3-min.jpg');
+	background-size:cover;
+	background-color:transparent; 
+	display:block;
+	float:left;
+	margin:50px auto 0px;
+	width:100%;
+	padding:0 5%;
+	height:350px;
+	z-index:2;
+	position:absolute;
+	top:-50px;
+
+} 
+
+#container_div_diagonale h2 {
+
+	color:white;
+	text-align:center;
+
+}
+
+#container_div_diagonale p {
+
+	color:white;
+	text-align:center;
+}
+
+/* titre div diagonale */
+
+#section_container_diagonale {
+
+	position:relative;
+	height:350px;
+	top:0px;
+}
+
+#container_div_diagonale {
+
+	position:absolute;
+	z-index:4;
+	top:100px;
+	max-width:100%;
+	min-width:100%;
+
+}
+
+#filtre_div_diagonale {
+
+	cursor:pointer;
+	background-size:100% 100%;
+	background-color:transparent; 
+	display:block;
+	float:left;
+	margin:50px auto 0px;
+	width:100%;
+	padding:0 5%;
+	height:350px;
+	z-index:2;
+	position:relative;
+	background-color:rgba(0, 0, 0, 0.7);
+	background-image:none;
+	position:absolute;
+	top:-50px;
+	z-index:3;
+}
+
+/* mise en page generale */
+
+section {
+
+	padding-top:100px;
+}
+
+#latest-post {
+
+	padding-top:50px;
+}
+
+section.svg_enable {
+
+	padding-bottom:100px;
+}
+
+#team.svg_enable {
+
+	padding-bottom:180px;
+}
+
+/******************************* FOOTER ******************************/
+/******************************		   ******************************/
+
+/* div et textes */
+
+.foot-copyright {
+
+	
+}
+
+#container_container_footer {
+
+	margin-bottom:40px;
+	padding-top:40px;
+	width:70%;
+	background-color:#182531;
+}
+
+.footer_container {
+
+	margin-bottom:20px;
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+	color:white;
+	border-top:0.001em solid white;
+	padding-top:30px;
+	margin-top:40px;
+}
+
+#footer_container_first {
+
+	border-top:0px;
+	padding-top:0px;
+}
+
+#footer_container_first img {
+
+	width:100px;
+	height:100px;
+	margin-right:15px;
+}
+
+#footer_container_first div:nth-child(2){
+
+	max-width:85%;
+	margin-top:30px;
+}
+
+#footer_container_first div:nth-child(2) p{
+
+	color:white;
+}
+
+.footer_div img {
+
+	height:100px;
+	width:70px;
+}
+
+.footer_div {
+
+	min-width:322px;
+	padding:10px;
+    font-size: 14px;
+}
+
+#footer_div_3_1 {
+
+	display:flex;
+	justify-content:space-between;
+}
+
+#footer_div_3 {
+
+	justify-content:center;
+	padding-top:15px;
+	padding-right:0px;
+	padding-left:20px;
+}
+
+.footer_div:first-child{
+
+	padding-left:0px;
+}
+
+#footer_div_3_1 {
+
+	margin:auto;
+}
+
+.footer_div h3 {
+
+	margin-top:0px;
+}
+
+#div_social {
+
+	padding:0px;
+	display:flex;
+	justify-content:flex-start;
+	width:150px;
+	margin-top:20px;
+}
+
+.footer_div, .footer_div p, .footer_div h3  {
+
+	color:white;
+}
+
+.footer_div h3 {
+
+	font-size:20px;
+}
+
+
+/* icones social */
+
+#div_social i {
+
+	font-size:30px;
+}
+
+#facebook:hover  {
+
+	color:#3C5A98;
+	cursor:pointer;
+}
+
+.fa-twitter-square:hover{
+
+	color:#1DA1F2;
+	cursor:pointer;
+}
+
+.fa-instagram:hover {
+
+	color:#EB53DD; 
+	cursor:pointer;
+}
+
+.fa-pinterest-square:hover
+ {
+
+	color:#CB2027;
+	cursor:pointer;
+}
+
+/* liens footer */
+
+.footer_div ul {
+
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+
+.footer_div ul li {
+
+	display:flex;
+	padding-right:10px;
+}
+
+#container_mentions_social {
+
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	margin-top:30px;
+	border-top:0.001em solid white;
+	padding-top:40px;
+}
+
+#container_mentions_social ul li a, #container_mentions_social div a {
+
+	text-decoration:none;
+}
+
+#container_mentions_social ul {
+
+	display:flex;
+}
+
+#container_mentions_social ul li:first-child {
+
+	padding-right:20px;
+	padding-left:0px;
+	border-right:1px solid white;
+}
+
+#container_mentions_social ul li:last-child {
+
+	padding-right:20px;
+	padding-left:20px;
+}
+
+#container_mentions_social ul li{
+
+	padding-right:20px;
+	padding-right:20px;
+	padding-left:20px;
+	border-right:1px solid white;
+}
+
+#footer_button {
+
+	color:white;
+	background-color:transparent;
+	border:none;
+	border-radius:20px;
+	padding:10px;
+	width:130px;
+	background-color:#E74C3C;
+	text-align:center;
+	cursor:pointer;
+}
+
+#footer_button a:hover, #footer_button a:active, #footer_button a:focus, #div_social a:active, #div_social a:focus, #div_social a:hover{
+
+	color:white;
+	text-decoration:none;
+}
+
+#container_mentions_social ul li:last-child {
+
+	border-right:none;
+}
+
+
+
+/******************************* PAGES ******************************/
+/******************************		   ******************************/
+
+/****************************** GENERAL ******************************/
+
+.pagination {
+
+	width:100%;
+	text-align:center;
+}
+
+.pagination h2 {
+
+	display:none;
+}
+
+/****************************** ARTICLES ******************************/
+
+/* comment */
+
+#respond {
+
+	display:none;
+}
+
+/* social media au bas de page */
+
+.post-social-meta {
+
+	display:none;
+}
+
+.container-address {
+
+	display: flex; 
+	width: 100%;
+	/*margin-top:40px;*/
+}
+
+.container-address p {
+
+	width:100px;
+	margin-top:20px;
+	margin-right:20px;
+}
+
+.address {
+
+	margin-top: 40px;
+}
+
+.container-renseignements {
+
+	margin-top: 40px; 
+	position: relative;
+	margin-left:10px;	
+	max-width:430px;
+}
+
+.post-img {
+
+	position:relative;
+	margin:auto;
+}
+
+/* images post a la une */
+
+.post-img img{
+
+	width:500px;
+	height:250px;
+	display:block;
+	position:relative;
+
+}
+
+.container_post {
+
+	padding-left:50px;
+	padding-right:50px;
+}
+
+/* style de la page articles */
+
+.container_post {
+
+	max-width:100%;
+	margin:auto;
+	margin-bottom:50px;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	margin-top:50px;
+}
+
+/* miniatures post */
+
+.post-img {
+
+	margin-bottom:30px;
+}
+
+/* style des miniatures */
+
+.filtre_noir {
+
+	width:500px;
+	height:250px;
+	background-color:black; 
+	opacity:0; 
+	z-index:1;
+	padding-right:30px;
+	padding-left:30px;
+	padding-top:70px;
+	position:absolute;
+	top:0;
+}
+
+.filtre_noir h2 {
+
+	color:white;
+	font-size:25px;
+	text-align:center;
+}
+
+.div_transparente {
+
+	width:500px;
+	height:250px;
+	z-index:2;
+	cursor:pointer;
+	position:absolute;
+	top:0;
+}
+
+.div_transparente a {
+
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+/* date article */
+
+.post-date, .post-meta .post-comment {
+
+	display:none;
+}
+
+/* espacement posts */
+
+.style_post {
+
+	display:block;
+	margin-bottom:40px;
+}
+
+#foogallery-gallery-301 {
+
+	width:300px;
+	float:left;
+	margin:20px;
+}
+
+/* autres articles bas de page */
+
+.single li.sl-related-thumbnail {
+
+	width:20%;
+}
+
+/* marges content articles */
+
+.fg-default.fg-gutter-10, .fg-default.fg-gutter-10 {
+
+	margin-bottom:30px;
+}
+
+#foogallery-gallery-791, #foogallery-gallery-297, #foogallery-gallery-283, #foogallery-gallery-310, #foogallery-gallery-313, #foogallery-gallery-299, #foogallery-gallery-315, #foogallery-gallery-307 {
+
+	margin-bottom:30px;
+
+}
+
+#foogallery-gallery-381, #foogallery-gallery-303 {
+
+	margin-bottom:40px;
+	margin-top:40px;
+}
+
+.container-renseignements a {
+
+	text-decoration : none;
+}
+
+/* suppression des articles associes, suppresion breadcumbs */
+
+.sl-related-thumbnail h3, .sl-related-thumbnail img, .sl-related-thumbnail-size, .sl-related-thumbnail, .single-post .single-post-content ul, .breadcrumb ul, .breadcrumb-trail ul {
+
+	display:none;
+}
+
+/* commentaires */
+
+#commentsbox {
+
+	padding-top:0px;
+}
+
+/* maps */
+
+.imap {
+
+	padding-top:40px;
+	width:100%;
+	height:250px;
+}
+
+/****************************** PLUS D'INFOS ******************************/
+
+/* grand titre articles et plus d'infos */
+
+.content_title {
+
+	text-align:center;
+	margin-bottom:40px;
+	color:#E74C3C;
+}
+
+/* adapatation des cards page "Accueil" */
+
+figure.home_content {
+
+	width:267px;
+	margin-left:15px;
+	margin-bottom:15px;
+}
+
+.post-block.home_post_block, .post-list {
+
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+}
+
+.page-post {
+
+	width:100%;
+}
+
+
+/* style des cards */
+
+figure.row_content {
+
+	width:265px;
+	margin:15px;
+}
+
+.post-content.row_content.row_figure {
+
+	width:200px;
+}
+
+
+/* titre categorie */
+
+
+.title_categorie {
+
+	text-decoration:none;
+}
+
+.tite_categorie h3, .page-title .demo-image h2.title, .demo-image .archive-title h2 {
+
+	font-size:50px;
+}
+
+#h3_coloured {
+
+	color:#E74C3C;
+	font-size:50px;
+}
+
+.content-type {
+
+	color:#E74C3C;
+	text-align:center;
+	margin-bottom:40px;
+	margin-top:40px;
+}
+
+/* smart slider */
+
+.n2-ss-align  {
+
+	margin-bottom:40px;
+}
+
+/****************************** ACTIVITES DU MOIS + FROM CONTACT ******************************/
+
+/* events page */
+
+tbody td {
+
+	border: 1px solid #DDD;
+}
+
+tbody td:first-child {
+
+	color:#F93B30;
+	font-weight:bold;
+}
+
+tbody tr:first-child td {
+
+	border-top:1px solid black;
+	
+}
+
+tbody tr:last-child td {
+
+	border-bottom:1px solid black;
+}
+
+tr {
+
+	cursor:pointer;
+}
+
+tbody tr:hover {
+
+	background:#F7F7F7;
+}
+
+tr td:last-child a  {
+
+	height:40px;
+	width:70px;
+	border-radius:5px;
+	background:#E74C3D;
+	padding:10px;
+	color:white;
+
+}
+
+.css-events-list table.events-table td {
+
+	padding: 8px 10px;
+    max-width: 20%;
+    text-align: center;
+    width: 50px;
+}
+
+.single-post-content {
+
+	padding: 100px;
+    padding-bottom: 50px;
+    background: white;
+    margin-bottom: 100px;
+}
+
+.css-events-list table.events-table { 
+
+	width:100%;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.svg_enable .page-content  {
+
+	padding-bottom:50px;
+}
+
+.event_image img {
+
+	display:block;
+	margin:auto;
+	margin-top:50px;
+	margin-bottom:70px
+}
+
+.page-description ul li {
+
+	list-style-type:none;
+}
+
+.page-description h3 {
+
+	margin-bottom:30px;
+}
+
+.table-event-container {
+
+	overflow:scroll;
+}
+
+#single-event {
+
+	margin-bottom:70px;
+}
+
+#single-event tbody tr {
+
+	background:#ddd;
+	cursor:default !important;
+}
+
+#single-event tbody tr td {
+
+	padding:30px;
+}
+
+#single-event th.event-description, #single-event th.event-time {
+
+	font-weight:bold;
+}
+
+.em-search-wrapper, #em-wrapper p {
+
+	display:none;
+}
+
+#em-wrapper table p {
+
+	display:block;
+}
+
+
+/* event form */
+
+.em-booking-login {
+
+	display:none;
+}
+
+.em-booking-form-details {
+
+	width:70%;
+	margin:auto;
+	float:none;
+}
+
+.em-ticket-select, .em-booking-submit {
+
+	display:block;
+	margin:auto;
+}
+
+.em-booking-form p {
+
+	display:flex;
+	flex-direction:column;
+}
+
+.page-description select,
+.em-booking-form-details input.input,
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required,
+.wpcf7-form-control.wpcf7-date.hasDatepicker 
+{
+	margin-bottom:15px;
+}
+
+.em-booking-form-details input.input,
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required,
+.wpcf7-form-control.wpcf7-date.hasDatepicker
+{
+	width:100%;
+	border:1px solid #ddd;
+	padding:10px;
+	border-radius:20px;
+}
+
+.em-booking-form-details textarea,
+textarea
+{
+	width:100%;
+	border:1px solid #ddd;
+	padding:10px;
+	border-radius:10px;
+	height:200px;
+}
+
+.input-group.input-checkbox.input-field-data_privacy_consent {
+
+	margin-top:30px;
+}
+
+.page-description select {
+    
+    height:40px; 
+}
+
+.em-booking-submit, 
+input.wpcf7-form-control.wpcf7-submit
+{
+	color:white;
+	background:#F93B30;
+	border-radius:10px;
+	border:0px;
+	padding:15px;
+	font-size:16px;
+	cursor:pointer;
+}
+
+.page-description select {
+
+	border-radius:50px;
+}
+
+
+
+/****************************** ERREURS, RECHERCHE ET ARCHIVES ******************************/
+
+/* titre du bandeau bleu */
+
+.title .overtext {
+
+	font-size:50px;
+}
+
+#titre_home h1{
+
+	text-align:center;
+	color:#E14A3A;
+	font-size:30px;
+	width:70%;
+	display:block;
+	margin:auto;
+}
+
+/* smiley page content none */
+
+.archive-title h1 img {
+
+	height:90px;
+	width:90px;
+	margin-left:20px;
+}
+
+/* Desole y a rien */
+
+.page-nothing h1 {
+
+	color:#E74C3C;
+	margin-bottom:30px;
+}
+
+.page-nothing .message{
+
+	font-weight:900;
+}
+
+.message img {
+
+	height:20px;
+	width:20px;
+	margin-left:5px;
+}
+
+/* titre erreur 404 */
+
+.caption-container h2 {
+
+	color:#E74C3C;
+	font-size:50px;
+}
+
+.caption-container h2 img {
+
+	height:50px;
+	width:50px;
+	margin-left:20px;
+}
+
+/* desole y a rien */
+
+.blog-content h1 {
+
+	color:#E74C3C;
+	margin-bottom:30px;
+	text-align:center;
+}
+
+/* smiley erreur 404 */
+
+.clin_doeil {
+
+	font-weight:900;
+	text-align:center;
+}
+
+.clin_doeil img {
+
+	height:20px;
+	width:20px;
+	margin-left:5px;
+}
+
+/* monstre erreur 404 */
+
+.sorry {
+
+	margin-top:70px;
+}
+
+.sorry img {
+
+	display:block;
+	margin:auto;
+}
+
+/* archives */
+
+#smiley_archives {
+
+	height:70px;
+	width:70px;
+}
+
+
+/******************************				   ******************************/
+/****************************** MANIMATION CSS ******************************/
+
+.cat-item:hover, .widget > ul > li:first-child, .sidebar-inner-widget > ul > li:first-child:hover, .widget li:hover{
+
+	animation: masuperanimation 0.1s;
+	cursor:pointer;
+	z-index:1000;
+	transform:scale(1.1);
+}
+
+@keyframes masuperanimation {
+
+	0%{
+
+        transform:scale(1);
+
+    }
+
+    100% {
+
+    	transform:scale(1.1);
+    }
+
+}
+
+/******************************				  ******************************/
+/****************************** MEDIA QUERIES ******************************/
+
+@media all and (max-width:1200px) {
+
+	/* pour rendre le logo top plus responsive */
+
+	.sans {
+
+		height:100px;
+	}
+
+	/* images cabanes */
+
+	.images_sainte_croix {
+
+		width:650px;
+	}
+
+	.container_images {
+
+		max-width:360px;
+		margin:auto;
+	}
+
+	/* images page blog */
+
+	.container_post {
+
+		width:625px;
+		padding-left:0px;
+		padding-right:0px;
+	}
+
+	/* infos bas de page articles */
+
+	.container-address p{
+
+		float:right;
+		width:100%;
+	}
+
+	.filtre_noir {
+
+		padding-top:30px;
+	}
+
+	.post-img {
+
+		margin-bottom:20px;
+	}
+
+	.filtre_noir h2 {
+
+		color:white;
+		font-size:15px;
+		text-align:center;
+	}
+
+	/* miniatures post */
+
+	.post-img img{
+
+		width:300px;
+		height:150px;
+	}
+
+	.div_transparente, .filtre_noir {
+
+		width:100%;
+		height:150px;
+	}
+
+	/* addresse post */
+
+	.container-address {
+
+		 flex-wrap: wrap;
+	}
+
+	.container-renseignements {
+
+		margin-bottom:50px;
+		left:0px;
+		margin-top:0px;
+		margin-left:0px;
+
+	}
+
+	.address {
+
+		margin-top:10px;
+	}
+
+	/* footer */
+
+	#footer_container {
+
+		justify-content:flex-start;
+	}
+
+	/* footer */
+
+	#footer_div_3_1 {
+
+		padding-left:0px;
+	}
+
+	#div_social {
+
+		margin:auto;
+	}
+
+	#footer_div_3 {
+
+		padding-left:0px;
+	}
+
+	#container_mentions_social ul {
+
+		margin-bottom:20px;
+	}
+
+}
+
+@media all and (max-width:1024px) {
+	
+	.sans {
+
+		height:115px;
+	}
+
+
+	#q {
+
+		width:270px;
+	}
+
+	#test_menu {
+
+		display:block;
+	}
+
+	/* menu et search form mobiles */
+
+	.homepage_icon {
+		background: url("") no-repeat center transparent;
+		width: 30px;
+		height: 30px;
+	}
+
+	#menu-item-253 a, #menu-item-253 {
+
+		left:0px;
+		right:0px;
+	}
+
+	.header a#pull {
+
+		text-indent:0px;
+	}
+
+	.fas.fa-search {
+
+		position:relative;
+		right:30px;
+	}
+
+	#ma_search_form{
+
+		display:none;
+	}
+
+	#ma_nav {
+
+		width:300px;
+		position:fixed;
+	}
+
+	#bouton_loupe {
+
+		display:none;
+	}
+
+	#bouton_loupe_2 {
+
+		display:block;
+		position:relative;
+		color:#E74C3C;
+		font-size:25px;
+		cursor:pointer;
+		display:flex;
+		justify-content:flex-end;
+
+	}
+
+	#bouton_retour{
+
+		display:none;
+	}
+
+	#bouton_retour_2{
+
+		cursor:pointer;
+		color:#E74C3C;
+		margin-right:10px;
+		margin-left:10px;
+		margin-top:5px;
+		font-size:20px;
+		display:block;
+	}
+
+	#ma_search_form_2 {
+
+		display:block;
+		top:-15px;
+		width:300px;
+		position:absolute;
+		right:0px;
+	}
+
+	#main-menu-wrapper  {
+
+		padding-bottom:15px;
+		padding-top:15px;
+		width:90px;
+	}
+
+	.smaller #main-menu-wrapper {
+
+		padding-top:15px;
+		padding-bottom:12px;
+		width:100px;
+	}
+
+	.blog a#pull::after {
+
+		color: #E74C3C;
+	}
+
+	/* ombre nav mobile */
+
+	.ombre {
+
+		box-shadow:0.1em 0px 10px 0px #000;
+	}
+
+	/* sidebar */
+
+	.svg_enable .page-content {
+	    margin-bottom: 30px !important;
+	}
+
+	/* footer */
+
+	#container_mentions_social ul li:last-child {
+
+		padding-right:0px;
+	}
+	
+}
+
+@media all and (max-width:950px) {
+
+	/* infos bas de page articles */
+
+	.container-address {
+
+		display: block;
+		flex-direction: column; 
+	}
+
+	.video_youtube {
+
+		width:100%;
+	}
+
+	.images_sainte_croix {
+
+		width:300px;
+		margin:auto;
+	}
+
+	.container-renseignements {
+
+		margin-top:30px;
+		margin-left:0px;
+	}
+
+	/* footer */
+
+	#footer_div_2 {
+
+		padding-left:0px;
+	}
+
+
+}
+
+@media all and (max-width:881px) {
+
+
+	/* homepage */
+
+	#home_post_block, .post-list {
+
+		justify-content:center;
+	}
+
+	.post-block {
+
+		max-width:100%;
+	}
+
+	/* center cards */
+
+	figure.home_content {
+
+		width: 267px;
+	    margin-right: 7px;
+	    margin-bottom: 15px;
+	    margin-left: 7px;
+	}
+
+	/* footer */
+
+	.footer_container {
+
+		display:flex;
+		justify-content:center;
+	}
+
+	.footer_div:first-child {
+
+		padding-left:10px;
+	}
+
+	#footer_div_2, #footer_div_address {
+
+		padding-right:0px;
+		padding-left:0px;
+		margin-bottom:25px;
+	}
+
+
+	/* formulaire d'inscription */
+
+	.css-events-list {
+
+		overflow:scroll;
+	}
+
+	#popmake-770 {
+
+		padding:0px;
+	}
+
+	.pum-theme-740 .pum-title, .pum-theme-lightbox .pum-title {
+
+		margin-top:40px;
+	}
+
+	#popmake-770 {
+
+		padding-bottom:40px;
+	}
+
+	.wpcf7-list-item .first .last {
+
+		min-width:420px;
+	}
+
+	span.wpcf7-list-item {
+
+		display: block;
+		margin: 0px;
+	}
+
+	input[type="checkbox"] {
+
+		width:50px;
+	}
+
+	span.wpcf7-list-item {
+
+		margin-top:15px;
+		margin-bottom:35px;
+	}
+
+
+	/* events */
+
+	.em-booking-form-details,
+	.em-booking-form-details textarea,
+	textarea 
+	{
+		min-width:100%;
+		width:100%;
+	}
+
+
+}
+
+
+@media all and (max-width:700px) {
+
+	/* style post */
+
+	.container_post {
+
+		width:300px;
+	}
+
+	.caption-container h2 img {
+
+		margin-top:20px;
+	}
+
+	#titre_home h1{
+
+		text-align:center;
+		color:#E14A3A;
+		font-size:20px;
+		width:100%;
+		display:block;
+		margin:auto;
+	}
+}
+
+@media all and (max-width:550px) {
+
+	/* pour garder la taille initiale du logo */
+
+	img {
+
+		 max-width: none;
+	}
+
+	/* align content on cards */
+
+	figure.post-content figcaption {
+
+		height:auto;
+		padding: 25px 25px 100px 25px;
+	}
+
+	/* "lire" sur figcaption */
+
+	 #latest-post span.read-more a {
+
+	    left: 100px;
+	    bottom:auto;
+	 }
+
+	 .read-more a {
+
+	 	left:100px;
+	 	bottom:auto;
+	 }
+
+	/* search form  */
+
+	.help {
+
+		display:none;
+	}
+
+	#ma_search_form_2 {
+
+		right:0px;
+		left:55%;
+		width:150px;
+	}
+
+	.q{
+
+		width:150px;
+	}
+
+
+	/* taille du grand logo */
+
+	.sans {
+
+		width:220px;
+		height:115px;
+		transition: all 0.3s ease;   
+	}
+
+	/* disparition du logo sur le slider */
+
+	#logo_bis {
+
+		display:none;
+	}
+
+	/* formulaire d'inscription */
+
+	.wpcf7-form-control-wrap input[type="checkbox"] {
+
+		width:50px;
+		height:auto;
+	}
+
+	.wpcf7-form {
+
+		max-width:100%;
+	}
+
+	.wpcf7-form-control-wrap input, .wpcf7-form label, .wpcf7-form select {
+
+		width:100%;
+	}
+
+	.wpcf7-submit {
+
+		display:block;
+		margin:auto;
+	}
+
+	.rc-anchor-light.rc-anchor-normal {
+
+		display:none;
+	}
+
+	html.pum-open.pum-open-overlay.pum-open-scrollable body > [aria-hidden] {
+
+		padding-right:0px;
+	}
+
+	/* div diagonale */
+
+	#container_div_diagonale {
+
+		top:110px;
+	
+	}
+
+	/* titre articles */
+
+	#h3_coloured {
+
+		font-size: 30px;
+	}
+
+	/* footer */
+
+	#container_mentions_social {
+
+		justify-content:center;
+	}
+
+	#container_mentions_social ul {
+
+		margin-bottom:20px;
+	}
+
+	.footer_div {
+
+		min-width:240px;
+	}
+
+	#powered a, #container_mentions_social ul li{
+
+		font-size:13px;
+	}
+
+	/* taille du bouton du slider */
+
+	#slider-div .theme-slider-button {
+
+		padding: 5px 5px;
+	}
+
+}
+
+@media all and (max-width:420px) { 
+
+	/* search form  */
+
+	#ma_search_form_2 {
+
+		right:0px;
+		left:75%;
+		width:80px;
+	}
+
+	.q{
+
+		width:55px;
+	}
+
+}
+
+
+
+

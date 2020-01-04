@@ -1,0 +1,46 @@
+# BEGIN LSCACHE
+# END LSCACHE
+# BEGIN NON_LSCACHE
+# END NON_LSCACHE
+
+
+
+
+
+
+
+# BEGIN WordPress
+
+
+# BEGIN WebP Converter
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+</IfModule>
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_ACCEPT} image/webp
+  RewriteCond %{DOCUMENT_ROOT}/$1/uploads-webpc/$2.jpg.webp -f
+  RewriteRule (.+)/uploads/(.+)\.jpg$ $1/uploads-webpc/$2.jpg.webp [T=image/webp]
+  RewriteCond %{HTTP_ACCEPT} image/webp
+  RewriteCond %{DOCUMENT_ROOT}/$1/uploads-webpc/$2.jpeg.webp -f
+  RewriteRule (.+)/uploads/(.+)\.jpeg$ $1/uploads-webpc/$2.jpeg.webp [T=image/webp]
+  RewriteCond %{HTTP_ACCEPT} image/webp
+  RewriteCond %{DOCUMENT_ROOT}/$1/uploads-webpc/$2.png.webp -f
+  RewriteRule (.+)/uploads/(.+)\.png$ $1/uploads-webpc/$2.png.webp [T=image/webp]
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+</IfModule>
+# END WebP Converter
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /wordpress/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wordpress/index.php [L]
+</IfModule>
+
+# END WordPress
